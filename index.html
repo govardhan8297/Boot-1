@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KHIT">
+    <meta name="description"
+        content="Date, Results, Link. 2020-06-23, JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019, Click Here.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>Results Portal-KHIT</title>
     <style>
         body {
             margin: 0;
@@ -20,6 +23,8 @@
         .container-fluid {
             box-shadow: 0.1px 0 0 0.2px rgb(70, 66, 66);
             width: 68%;
+            margin-right: auto;
+            margin-left: auto;
         }
 
         img[src="http://www.khitguntur.com/jntuk-results/images/khit-logo.jpg"] {
@@ -47,6 +52,12 @@
         table colgroup col {
             border-radius: 10px 10px 0 0;
 
+        }
+
+        table {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
@@ -115,9 +126,12 @@
             <div class="card-body d-inline-flex">
                 <p>JNTUK B.Tech All [R13,R10] Semester Group Examinations Results </p>
                 <form action="">
-                    <input type="button" value="Student">
-                    <input type="button" value="Admin">
-                    <input type="button" value="College Login">
+                    <input type="button" value="Student"
+                        onclick="location.href='http://www.khitguntur.com/jntuk-results/student/';">
+                    <input type="button" value="Admin"
+                        onclick="location.href='http://www.khitguntur.com/jntuk-results/admin/';">
+                    <input type="button" value="College Login"
+                        onclick="location.href='http://www.khitguntur.com/jntuk-results/edit.php';">
                 </form>
             </div>
         </div>
