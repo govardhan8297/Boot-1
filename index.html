@@ -1,507 +1,485 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<title>Resume</title>
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			font-size: 18px;
-		}
-
-		header {
-			padding: 0px;
-			margin: 0px;
-			text-align: center;
-
-		}
-
-		hr {
-			width: 95%;
-			margin: auto;
-			border: 0px;
-			border-top: 7px double black;
-		}
-
-		.carrer {
-
-			margin: auto;
-			width: 95%;
-			background-color: lightgrey;
-			color: black;
-		}
-
-		.carrerpara {
-			width: 95%;
-			margin: auto;
-			font-size: 15px;
-		}
-
-		.eduqua {
-			width: 95%;
-			margin: auto;
-			background-color: lightgrey;
-		}
-
-		table {
-			border: 1px solid black;
-			border-collapse: collapse;
-			width: 95%;
-			margin: auto;
-			font-size: 10px;
-			padding: 0;
-
-		}
-
-		th {
-			line-height: 40px;
-		}
-
-		tr {
-			border: 1px solid black;
-			text-align: center;
-			font-size: 15px;
-			line-height: 30px;
-		}
-
-		td {
-			border: 1px solid black;
-			text-align: center;
-			font-size: 15px;
-
-		}
-
-		th {
-			border: 1px solid black;
-			width: 19%;
-		}
-
-		.techskills {
-			width: 95%;
-			background-color: lightgrey;
-			margin: auto;
-		}
-
-		.skills {
-			font-size: 13px;
-			width: 95%;
-			margin: auto;
-		}
-
-		.internship {
-			width: 95%;
-			margin: auto;
-			background-color: lightgrey;
-		}
-
-		.interndet {
-			width: 95%;
-			margin: auto;
-			font-size: 13px;
-		}
-
-		.curricular {
-			width: 95%;
-			margin: auto;
-			background-color: lightgrey;
-		}
-
-		.activities {
-			font-size: 15px;
-			width: 95%;
-			margin: auto;
-		}
-
-		.personaltraits {
-			width: 95%;
-			margin: auto;
-			background-color: lightgrey;
-		}
-
-		.perstraitdet {
-			font-size: 15px;
-			width: 95%;
-			margin: auto;
-		}
-
-		.personalinfo {
-			width: 95%;
-			margin: auto;
-			background-color: lightgrey;
-		}
-
-		.fathers {
-			width: 95%;
-			margin: auto;
-			font-size: 13px;
-
-		}
-
-		.dob {
-			width: 95%;
-			margin: auto;
-			font-size: 13px;
-		}
-
-		.languages {
-			width: 95%;
-			margin: auto;
-			font-size: 13px;
-
-		}
-
-		.hobbies {
-			width: 95%;
-			margin: auto;
-			font-size: 13px;
-		}
-
-		.address {
-			width: 95%;
-			margin: auto;
-			font-size: 13px;
-		}
-
-		.declaration {
-			width: 95%;
-			margin: auto;
-			background-color: lightgrey;
-		}
-
-		.declarationpara {
-			font-size: 15px;
-			width: 95%;
-			margin: auto;
-
-
-		}
-
-		.date {
-			font-size: 15px;
-			width: 95%;
-			margin: auto;
-		}
-
-		.sign {
-			float: right;
-
-			font-size: 15px;
-		}
-
-		span {
-			display: inline-flex;
-		}
-
-		.firsthalf {
-			width: 47.4%;
-			margin: auto;
-			font-size: 15px;
-		}
-
-		.secondhalf {
-			width: 47.4%;
-			margin: auto;
-			padding: 3px;
-			font-size: 15px;
-
-		}
-
-		.space {
-			width: 40px;
-		}
-
-		.academic_proj {
-			width: 95%;
-			margin-right: auto;
-			margin-left: auto;
-			background-color: lightgray;
-		}
-
-		.acad_proj_det {
-			width: 95%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.thirdhalf {
-			width: 30%;
-			font-size: 15px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.fourthhalf {
-			width: 65%;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-
-		@media screen and (max-width:300px) {
-			body {
-				width: 120%;
-			}
-		}
-
-
-		@media screen and (max-width:800px) {
-			h3 {
-				font-size: 20px;
-			}
-
-			h5 {
-				font-size: 16px;
-			}
-
-			body {
-				font-size: 18px;
-			}
-
-			hr {
-				border: 0px;
-				border-top: 5px double black;
-			}
-
-			td {
-				font-size: 10px;
-			}
-
-			body {
-				font-size: 17px;
-			}
-
-			th {
-				line-height: 19px;
-				font-size: 10px;
-				margin: auto;
-			}
-
-			tr {
-				line-height: 16px;
-				font-size: 16px;
-			}
-
-			p {
-				font-size: 13px;
-			}
-
-			.activities {
-				font-size: 13px;
-			}
-
-			.perstraitdet {
-				font-size: 13px;
-			}
-
-			.declarationpara {
-				font-size: 13px;
-			}
-
-			.date {
-				font-size: 13px;
-			}
-
-			.sign {
-				font-size: 13px;
-
-			}
-
-			.space {
-				width: 10px;
-			}
-
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 200vh;
+        }
+
+        .container-fluid {
+            box-shadow: 0.1px 0 0 0.2px rgb(70, 66, 66);
+            width: 68%;
+        }
+
+        img[src="http://www.khitguntur.com/jntuk-results/images/khit-logo.jpg"] {
+            padding-right: 5px;
+            padding-bottom: 10px;
+        }
+
+        #firstCard .card-body {
+            height: 40px;
+            transform: translateY(-30%);
+        }
+
+        #firstCard .card-body p {
+            margin-left: 20px;
+            margin-right: 180px;
+            font-size: 17px;
+            color: rgb(2, 177, 2);
+        }
+
+        #firstCard .card-body input {
+            transform: translateY(-10%);
+            color: blue;
+        }
+
+        table colgroup col {
+            border-radius: 10px 10px 0 0;
+
+        }
+
+
+
+        table th {
+            background-color: lightgrey;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        table td {
+
+            text-align: left;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+            ;
+        }
+
+        table colgroup #firstHead {
+            width: 10%;
+            text-align: center;
+        }
+
+        table colgroup #secondHead {
+            width: 80%;
+        }
+
+
+
+        table colgroup #thirdHead {
+            width: 10%;
+        }
+
+        table colgroup tr td {
+            text-align: right;
+            float: right;
+            justify-content: end;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .container-fluid {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+
+        }
+    </style>
 </head>
 
 <body>
-	<header>
-		<h3>Naga Govardhan Thatha</h3>
-	</header><br>
-	<div class="contdet" style="float: right;padding-right: 3%;font-size:75%;">
-		<a href="mailto:govardhan4f8@gmail.com">govardhan4f8@gmail.com</a><br><br>
-		<a href="tel:+91 82 97 29 78 45">+91 82 97 29 78 45</a>
-	</div><br>
-	<div><br><br>
-		<hr>
-	</div><br>
-	<div class="carrer">
-		<h5>Carrer Objective:</h5>
-	</div>
-	<div class="carrerpara">
-		<p>Seeking a position to utilize my skills and abilities in the Information Technology that offers professional
-			growth while being resourceful, innovative and flexible.</p>
-	</div>
-	<div class="eduqua">
-		<h5>Educational Qualifications:</h5>
-	</div>
-	<div class="qualifications">
-		<table>
-			<tr>
-				<th>Course</th>
-				<th>Institution</th>
-				<th>Board/University</th>
-				<th>Year of completion</th>
-				<th>Percentage</th>
-			</tr>
-			<tr>
-				<td>B.Tech(ECE)</td>
-				<td>Kallam Haranadhareddy Institute Of Technology, Guntur</td>
-				<td>JNTU-Kakinada</td>
-				<td>2020</td>
-				<td>67</td>
-			</tr>
-			<tr>
-				<td>Intermediate (MPC)</td>
-				<td>Sri Chaitanya Junior College, Guntur.</td>
-				<td>Board Of Intermediate Education</td>
-				<td>2016</td>
-				<td>86</td>
-			</tr>
-			<tr>
-				<td>SSC</td>
-				<td>Vignan High school, Guntur.</td>
-				<td>Board Of Secondary Education</td>
-				<td>2014</td>
-				<td>90</td>
-			</tr>
-		</table>
-	</div><br>
-	<div class="techskills">
-		<h5>Technical Skills:</h5>
-	</div>
-	<div class="skills">
-		<span class="firsthalf">
-			<p>Programming Languages</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>C, HTML, CSS, JAVA(BASICS)</p>
-		</span>
-		<span class="firsthalf">
-			<p>Office Suites</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>Ms Office</p>
-		</span>
-		<span class="firsthalf">
-			<p>Design Tools</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>MATLAB,Arduino</p>
-		</span>
-	</div>
-	<div class="internship">
-		<h5>Internship Projects:</h5>
-	</div>
-	<div class="interndet">
-		<span class="firsthalf">
-			<p>Title</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>Study of Manufacturing of Turbo Generators</p>
-		</span>
-		<span class="firsthalf">
-			<p>Duration&Place</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>28 days at Bharat Heavy Electricals Limited(BHEL), Hyderabad.</p>
-		</span>
-	</div>
-	<div class="academic_proj">
-		<h5>Academic Project:</h5>
-	</div>
-	<div class="acad_proj_det">
-		<span class="thirdhalf">
-			<p>Title&nbsp;:</p>
-		</span><span class="fourthhalf">
-			<p><strong>"VOICE CONTROLLED HOME AUTOMATION USING ARDUINO"</strong></p>
-		</span>
-	</div>
-	<div class="curricular">
-		<h5>Co & Extra Cirricular Activities:</h5>
-	</div>
-	<div class="activities">
-		<ul>
-			<li>Attended a Two day national level workshop on Digital Design Through Arduino at Kallam Haranadhareddy
-				Institute Of Technology.</li><br>
-			<li>Underwent a workshop on Mathematical Perspective Of Signals & Systems Using MATLAB at Kallam
-				Haranadhareddy Institute Of Technology.</li><br>
-			<li>Certified in a workshop on Matlab Symposium by ECENTRIX in University College of Engineering
-				Narasaraopet.</li><br>
-			<li>Certified by Dakshin Bharat Hindi Prachar Sabha for Rashtra.</li><br>
-			<li>Participated in a Technical quiz of Srujanankura 2k19.</li>
-		</ul>
-	</div>
-	<div class="personaltraits">
-		<h5>Personal Traits:</h5>
-	</div>
-	<div class="perstraitdet">
-		<ul>
-			<li>Flexible & Quick Learner</li><br>
-			<li>Problem solving skills</li><br>
-			<li>Active Initiater</li>
-		</ul>
-	</div>
-	<div class="personalinfo">
-		<h5>Personal Information</h5>
-	</div>
-	<div class="fathers">
-		<span class="firsthalf">
-			<p>Father's Name</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>Mr.Srinivas Thatha</p>
-		</span>
-	</div>
-	<div class="dob">
-		<span class="firsthalf">
-			<p>Date of Birth</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>31 Jan 1999.</p>
-		</span>
-	</div>
-	<div class="languages">
-		<span class="firsthalf">
-			<p>Languages Known</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>Telugu, Hindi, English.</p>
-		</span>
-	</div>
-	<div class="hobbies">
-		<span class="firsthalf">
-			<p>Hobbies</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>Playing Cricket & Volleyball, Listening Music, Browsing Web.</p>
-		</span>
-	</div>
-	<div class="address">
-		<span class="firsthalf">
-			<p>Address for communication</p>
-		</span><strong>:</strong><span class="secondhalf">
-			<p>D.No:1-35-29, Maruthinagar, 5th Lane, Pattabhipuram post, Guntur-522006, A.P.</p>
-		</span>
-	</div>
-	<div class="declaration">
-		<h5>Declaration:</h5>
-	</div>
-	<div class="declarationpara">
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-			hereby declare that the above-furnished information is true to the best of my knowledge.</p>
-	</div>
-	<div class="date">
-		Date:<br><br>
-		Place:<br>
-	</div>
-	<div class="sign">
-		<span>
-			<p>Naga Govardhan Thatha
-			<div class="space"></div>
-			</p>
-		</span>
-	</div><br>
+    <div class="container-fluid">
+        <img src="http://www.khitguntur.com/jntuk-results/images/khit-logo.jpg" alt="Khit college" />
+        <div class="card" id="firstCard">
+            <div class="card-body d-inline-flex">
+                <p>JNTUK B.Tech All [R13,R10] Semester Group Examinations Results </p>
+                <form action="">
+                    <input type="button" value="Student">
+                    <input type="button" value="Admin">
+                    <input type="button" value="College Login">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <table>
+                <colgroup colspan="3">
+                    <col id="firstHead">
+                    <col id="secondHead">
+                    <col id="thirdHead">
+                </colgroup>
+                <tr>
+                    <th>Date</th>
+                    <th>Results</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK
+                        1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-2-supply-rc-rv-results-nov-2019.html';"
+                        style="cursor: pointer;"><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">Results for IV B.Tech I semester (R16 ) Adv.Supplementary
+                        Examinations FEB 2020 </td>
+                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-4-1-r16-adv-supply-results-2020.html';"
+                        style="cursor: pointer;"><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">Results for I B.Tech I semester (R13/R10) Supplementary
+                        Examinations JAN 2020 </td>
+                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-1-1-r13-r10-results-2020.html';"
+                        style="cursor: pointer;"><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">Results for I B.Tech I semester (R19/R16) Regular/Supply Exams
+                        JAN 2020 </td>
+                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-1-1-r19-16-results-2020.html';"
+                        style="cursor: pointer;"><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">NTUK 2-1[R13] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1[R16] Regular&Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+                <tr>
+                    <td>2020-6-23</td>
+                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
+                    <td><strong>Click Here</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
 </body>
 
