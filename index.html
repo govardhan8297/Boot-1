@@ -4,133 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="KHIT">
-    <meta name="description"
-        content="Date, Results, Link. 2020-06-23, JNTUK 1-2[R16] Supply Exam RC-RV result Nov 2019, Click Here.">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>KHIT - Results Portal</title>
+    <script src="https://kit.fontawesome.com/61c3e49273.js" crossorigin="anonymous"></script>
+    <title>Boot-1</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
+
             box-sizing: border-box;
-            width: 200vh;
         }
 
-        hr {
-            width: 103%;
-            transform: translateX(-1.5%);
-            -webkit-transform: translateX(-1.5%);
-            -moz-transform: translateX(-1.5%);
-            -o-transform: translateX(-1.5%);
+        .navbar-brand {
+            padding: 20px;
         }
 
-        .container-fluid {
-            box-shadow: 0.1px 0 0 0.2px rgb(70, 66, 66);
-            width: 68%;
-            margin-right: auto;
-            margin-left: auto;
+        .navbar-brand:hover {
+            cursor: pointer;
         }
 
-        img[src="http://www.khitguntur.com/jntuk-results/images/khit-logo.jpg"] {
-            padding-right: 5px;
-            padding-bottom: 10px;
+        .navbar-nav .nav-item {
+            padding-left: 40px;
         }
 
-        #firstCard .card-body {
-            height: 40px;
-            transform: translateY(-30%);
-            -webkit-transform: translateY(-30%);
-            -moz-transform: translateY(-30%);
-            -o-transform: translateY(-30%);
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
         }
 
-        #firstCard .card-body p {
-            margin-left: 20px;
-            margin-right: 180px;
-            font-size: 17px;
-            color: rgb(2, 177, 2);
+
+        .text-light {
+            color: white;
         }
 
-        #firstCard .card-body input {
-            transform: translateY(-10%);
-            -webkit-transform: translateY(-10%);
-            -moz-transform: translateY(-10%);
-            -o-transform: translateY(-10%);
-            color: blue;
+        .dropdown-item {
+            color: white;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
         }
 
-        table colgroup col {
-            border-radius: 10px 10px 0 0;
 
+        ul li .navbar-nav {
+            display: block;
         }
 
-        table {
-            width: 100%;
+        .navbar-nav:hover {
+            cursor: pointer;
+        }
+
+        header img[alt="image1"] {
+            width: 700px;
+            height: 370px;
             margin-left: auto;
             margin-right: auto;
+            display: block;
+            margin-top: 30px;
         }
 
+        header img[alt="image2"] {
+            width: 80px;
+            height: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: translateY(-70%);
+            -webkit-transform: translateY(-70%);
+            -moz-transform: translateY(-70%);
+            -o-transform: translateY(-70%);
+            -ms-transform: translateY(-70%);
 
-
-        table th {
-            background-color: rgb(221, 216, 216);
-            text-align: left;
-            padding-left: 5px;
-            padding: 7px;
         }
 
-
-
-        table tr td {
-
-            text-align: left;
-            padding: 3px;
-            font-size: 17px;
+        .circle-img {
+            border-radius: 50%;
+            border: 5px solid white;
         }
 
-        tr:nth-child(even) {
-            background-color: #f7f5f5;
-            ;
-        }
-
-        table colgroup #firstHead {
-            width: 10%;
+        .content {
+            transform: translateY(-50%);
+            -moz-transform: translateY(-500%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             text-align: center;
+            font-weight: 500;
+            opacity: 0.8;
         }
 
-        table colgroup #secondHead {
-            width: 80%;
+        .container {
+            width: 48%;
+        }
+
+        section a:hover {
+            text-decoration: none;
+        }
+
+        .section_20 {
+            font-size: 25px;
+        }
+
+        .section_20 {
+            display: block;
+        }
+
+        .section_20 a {
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        .fa-facebook {
+            color: white;
+            background-color: blue;
+        }
+
+        .fa-facebook:hover {
+            color: white;
+            background-color: rgba(10, 10, 138, 0.753);
+        }
+
+        .fa-linkedin {
+            color: white;
+            background-color: rgba(9, 138, 170, 0.808);
+        }
+
+        .fa-linkedin:hover {
+            color: white;
+            background-color: rgba(52, 155, 180, 0.808);
+        }
+
+        .fa-twitter {
+            color: white;
+            background-color: rgb(17, 194, 238);
+        }
+
+        .fa-twitter:hover {
+            color: white;
+            background-color: rgb(10, 137, 168);
+        }
+
+        .fa-reddit-alien {
+            color: white;
+            background-color: rgb(255, 59, 45);
+        }
+
+        .fa-reddit-alien:hover {
+            color: white;
+            background-color: rgb(255, 8, 8);
+        }
+
+        .fa-whatsapp {
+            color: white;
+            background-color: rgb(19, 161, 19);
+        }
+
+        .fa-whatsapp:hover {
+            color: white;
+            background-color: rgb(40, 182, 40);
+        }
+
+        .circle-icon {
+            border-radius: 50%;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        #intro-img {
+            width: 70px;
+            border: 1px solid black;
+        }
+
+        .terms ul {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .terms ul li :hover {
+            cursor: pointer;
+        }
+
+        .terms ul li {
+            padding: 10px;
+        }
+
+        .terms ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .media button @media screen and (min-width:800px) {
+            .navbar-nav {
+                transform: translateX(10%);
+            }
+
+
+            .navbar-brand {
+                transform: translateX(30%);
+            }
         }
 
 
 
-        table colgroup #thirdHead {
-            width: 10%;
-        }
+        @media screen and (max-width:1200px) {
 
-        table colgroup tr td {
-            text-align: right;
-            float: right;
-            justify-content: end;
-        }
+            .navbar-brand {
+                transform: translateX(-10%);
+                -webkit-transform: translateX(-10%);
+                -moz-transform: translateX(-10%);
+                -o-transform: translateX(-10%);
+                -ms-transform: translateX(-10%);
+            }
 
-        @media screen and (max-width: 1200px) {
-            .container-fluid {
+            header img[alt="image1"] {
+                height: 50%;
+            }
+
+            header img[alt="image2"] {
+                width: 15%;
+                height: 10%;
+            }
+
+            .container {
                 width: 100%;
             }
-            #firstCard .card-body p {
-                margin-right: 250px;
-            }
-            img {
-                width: 100%;
+
+            .section_20 a {
+                display: flex;
+                padding: 20px;
             }
 
-            .card {
+            .section_20 a i {
                 width: 100%;
+                text-align: center;
+            }
+
+            .circle-icon {
+                border-radius: 40px;
             }
 
 
@@ -139,679 +256,349 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <img src="http://www.khitguntur.com/jntuk-results/images/khit-logo.jpg" alt="Khit college" />
-        <div class="card" id="firstCard">
-            <div class="card-body d-inline-flex">
-                <p>JNTUK B.Tech All [R13,R10] Semester Group Examinations Results </p>
-                <form action="">
-                    <input type="button" value="Student"
-                        onclick="location.href='http://www.khitguntur.com/jntuk-results/student/';">
-                    <input type="button" value="Admin"
-                        onclick="location.href='http://www.khitguntur.com/jntuk-results/admin/';">
-                    <input type="button" value="College Login"
-                        onclick="location.href='http://www.khitguntur.com/jntuk-results/edit.php';">
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="card">
-            <table>
-                <colgroup colspan="3">
-                    <col id="firstHead">
-                    <col id="secondHead">
-                    <col id="thirdHead">
-                </colgroup>
-                <tr>
-                    <th>Date</th>
-                    <th>Results</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>2020-06-23 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK
-                        1-2[R16] Supply Exam RC-RV result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-2-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-06-23 </td>
-                    <td style="color: rgb(2, 177, 2);">Results for IV B.Tech I semester (R16 ) Adv.Supplementary
-                        Examinations FEB 2020 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-4-1-r16-adv-supply-results-2020.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-06-23 </td>
-                    <td style="color: rgb(2, 177, 2);">Results for I B.Tech I semester (R13/R10) Supplementary
-                        Examinations JAN 2020 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-1-1-r13-r10-results-2020.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-06-23 </td>
-                    <td style="color: rgb(2, 177, 2);">Results for I B.Tech I semester (R19/R16) Regular/Supply Exams
-                        JAN 2020 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-1-1-r19-16-results-2020.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-16 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1[R13] Supply Exam RC-RV result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-2-1-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-16 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1[R16] Regular&Supply Exam RC-RV result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-2-1-regular-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-09 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R16] Supply Exam RC-RV result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-2-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-09 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam RC-RV Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-2-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-09 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Supply Exam RC-RV result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-2-2-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-09 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Supply Exam RC-RV Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-2-2-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-04 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1[R16] Regular&Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-1-regular-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-03-04 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supply Exam RC-RV Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-1-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-02-24 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-2-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-02-24 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R13/R10] Supply Exam Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-1-2-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-02-13 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-2-2-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-02-13 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Supply Exam Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-2-2-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-23 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-2-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-23 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R16] Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-2-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-18 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R13/R10] Supply Exam RC-RV Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-4-1-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-18 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R16] Regular/Supply Exam RC-RV Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-4-1-regular-supply-rc-rv-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supply Exam Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-1-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1[R16] Regular&Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-1-regular-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-02 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1[R13] Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-2-1-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2020-01-02 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1[R16] Regular&Supply Exam result Nov 2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-2-1-regular-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-12-04 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R13/R10] Supply Exam Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-4-1-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-12-04 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R16] Regular/Supply Exam Results Nov-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-4-1-regular-supply-results-nov-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R13/R10] Supply Exam RC-RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-1-2-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Regular/Supply Exam RC_RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-2-reg-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R16] Supply Exam RC_RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-1-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R13/R10] Supply Exam RC_RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-1-1-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R13/R10] Supply Exam RC-RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-r10-2-1-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R16] Supply Exam RC-RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-1-r16-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-24 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Advanced Supply RC/RV Results July-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-adv-supply-rc-rv-results-july-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-03 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Regular/Supply Exam RC-RV Results April/May-2019
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-2-r16-rc-rv-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-03 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R16] Supply Exam RC-RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-1-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-03 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Supply Exam RC-RV Results April/May-2019
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-2-r13-r10-rc-rv-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-08-03 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supply Exam RC-RV Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-1-supply-rc-rv-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-30 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Advanced Supply Exam Results July-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-adv-supply-results-july-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam Results April/May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-2-supply-rc-rv-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R16] Regular Exam RC-RV Results April/May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-2-regular-rc-rv-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-15 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R13/R10] Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-1-1-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-15 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R16] Regular/Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-1-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R13/R10] Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-r10-2-1-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R16] Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-2-1-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R13/R10] Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-1-2-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Regular/Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-1-2-regular-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-05 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R16] Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-1-supply-results-may-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-07-05 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supply Exam Results May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-1-supply-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-06-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Regular/Supply Exam RC-RV Results
-                        April/May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-rc-rv-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-06-20 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK B.Tech 2-2 [R16] Regular/Supply Exam Results April/May-2019
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-2-r16-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-06-20 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK B.Tech 2-2 [R13/R10] Supply Exam Results April/May-2019
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-2-r13-r10-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-06-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R16] Regular Exam Results April/May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r16-3-2-regular-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-06-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam Results April/May-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-r13-3-2--supply-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Regular/Supply Exam Results April/May-2019
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-results-april-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R13] Advanced Supply Exam RC-RV Results Feb-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-1-adv-sup--rc-rv-results-feb-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R13] Advanced Supply Exam Results Feb-2019 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-1-adv-sup-results-feb-2019.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-16 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R13/R10] Supply Exam RC-RV Results Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r13-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-16 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R16] Regular/Supply Exam RC-RV Results Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r16-reg-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-2-r10-r13-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-r10-r13-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-r16-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R13/R10] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-1-r10-r13-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R16] Regular/Supply Exam RC-RV Results Oct/Nov-2018
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-1-r16-reg-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R13/R10] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r10-r13-reg-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r16-reg-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-03-02 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam RC/RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-2-r13-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-02-03 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R13/R10] Supply Exam Results Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r13-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-02-03 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r16-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-31 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R16] Regular Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-1-r16-reg-rc-rv-results-nov-201.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-31 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supply Exam RC-RV Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-1-r13-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-23 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-2-r13-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-19 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-r13-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-19 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-r16-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R13/R10] Regular/Supply Exam RC/RV Results
-                        Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-1-r13-reg-sup-rc-rv-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R13/R10] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r13-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2019-01-07 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R16] Regular/Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r16-reg-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-12-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R13/R10] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-1-r13-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-12-26 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R16] Regular/Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-1-r16-reg-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-12-19 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R16] Regular Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-1-r16-reg-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-12-15 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supply Exam Results Oct/Nov-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-1-r13-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-12-04 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-1 [R13/R10] Regular/Supply Exam Results Oct/Nov-2018
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-1-r13-reg-sup-results-nov-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-09-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Regular/Supply Exam RC/RV Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r16-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-09-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R16] Supply Exam RC/RV Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r16-sup-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-09-10 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 Supply Exam RC/RV RESULTS (R10, R13) MAY 2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r13-sup-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-09-10 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 Supply Exam RC/RV RESULTS (R10, R13) MAY 2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r13-sup-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-09-06 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Advance Supply Exam RC/RV Results July-2018
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-adv-sup-rc-rv-results-jul-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-08-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R16] Supply Exam RC/RVResults May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-1-r16-sup-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-08-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R13,R10] Supply Exam RC/RVResults May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-1-r13-sup-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-08-04 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Advance Supply Exam Results July-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-adv-sup-results-jul-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-08-02 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13,R10] Supply Exam RC/RVResults May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-1-r13-sup-rc-rv-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-30 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Regular/Supply Exam RC/RV Results April-2018
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-r16-rc-rv-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-30 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Regular/Supply Exam RC/RV Results April-2018
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-rc-rv-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-22 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-2 [R13/R10] Regular/Supply Exam RC/RV Results April-2018
-                    </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-3-2-rc-rv-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R13,R10] Supply Exam Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r13-sup-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R13,R10] Supply Exam Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r13-sup-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-1 [R16] Supply Exam Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-1-r16-sup-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-07-21 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 1-2 [R16] Regular/Supply Exam Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-1-2-r16-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-06-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R16] Supplementary Exam Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-1-r16-supply-results-may-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-06-27 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-1 [R13/R10] Supplementary Exam Results May-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-1-r13-r10-supply-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-06-22 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 3-1 [R13/R10] Supplementary Exam Results April-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-3-1-r13-r10-supply-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-06-19 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 4-2 [R13/R10] Regular/Supply RC/RV Results April-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-4-2-rc-rv-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-06-11 </td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R13/R10] Supplementary Exam Results April-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-2-2-r13-r10-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
-                <tr>
-                    <td>2018-06-11</td>
-                    <td style="color: rgb(2, 177, 2);">JNTUK 2-2 [R16] Regular Exam Results April-2018 </td>
-                    <td onclick="location.href='http://www.khitguntur.com/jntuk-results/results/jntuk-bt-2-2-r16-results-april-2018.html';"
-                        style="cursor: pointer;"><strong>Click Here</strong></td>
-                </tr>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <a class="navbar-brand" class="nav-link" href="#">{KallamKurrallu}</a>
+        <button type="button" data-toggle="collapse" data-target="#collapseOne" class="navbar-toggler">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseOne">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+                        Web Hosting
+                    </a>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item" href="#">Best Hosting</a>
+                        <a class="dropdown-item" href="#">Cheap Web Hosting</a>
+                        <a class="dropdown-item" href="#">Web Hosting For Developers</a>
 
-            </table>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Web Development</a>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item" href="#">How to Become a Web Developer</a>
+                        <a class="dropdown-item" href="#">How to Make a Responsive Web Design</a>
+                        <a class="dropdown-item" href="#">Dev Reviews</a>
+                    </div>
+                </li>
+                <li class="nav-item text-muted">
+                    <a class="nav-link" href="#">Blog</a>
+
+                </li>
+                <li class="nav-item text-muted">
+                    <a class="nav-link" href="#">About</a>
+
+                </li>
+            </ul>
         </div>
-        <hr>
-      <div style="text-align: center;">
-            <a href="#" style="text-decoration: none;">KHIT Home</a>&nbsp;|&nbsp;<small>&copy;</small>&nbsp;& Script
-            Developed by <a href='mailto:govardhan4f8@gmail.com' style='text-decoration:none'>Govardhan</a>
+    </nav>
+    <div class="container ">
+        <header>
+            <img src="https://1xqdqy285sk7212bfiejcprr-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/Web-Development-Company-USA.jpg"
+                alt="image1" class="img-fluid" />
+            <img src="https://ezyhomesrealestate.com.au/wp-content/uploads/2015/11/dummy-profile-image-png-6.png"
+                alt="image2" class="img-fluid circle-img" />
+        </header>
+
+        <div class="container content">
+            <p>Naga Govardhan<br>
+                <i class="fa fa-birthday-cake" aria-hidden="true"><small>&nbsp;&nbsp;31 January, 1845</small></i></p>
+        </div>
+        <section class="section_1 mb-5">
+            <h1 style="text-align: center;">Top Programming Blogs to Improve Your Skills</h1><br>
+            <p>It’s important to follow trends in your field to ensure you’re staying current on standards and protocols
+                and perhaps more so in the field of coding. Programmers of all specialties can benefit from following
+                industry-leading blogs to stay aware of the latest technologies.</p><br>
+            <p>If you’re a coder of any sort you’ll want to subscribe to these useful programming blogs written by the
+                top blogging coders.</p><br>
+            <p>Each of these bloggers has made a name for themselves in the programming community by sharing relevant,
+                high-quality information and tips for coders. They maintain their respective blogs well and keep current
+                information posted on a regular basis.</p>
+            <p>By following the best programming blogs you’ll find tips and shortcuts you may never have otherwise
+                thought to try. Consider using an RSS feed reader through your phone or desktop browser to automatically
+                download each new post from these top coding bloggers.</p>
+        </section>
+        <section class="section_2 mb-5">
+            <h2>Coding Horror</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/coding-horror.png.webp"
+                alt="coding horror image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Coding Horror was started in 2004 by Jeff Atwood, an experienced software engineer from Berkeley, CA.
+                Jeff’s experience, as well as his awareness of the human side of technology, makes his website one of
+                the best programming blogs for anyone interested in web development, software engineering and computers
+                in general.</p>
+            <a href=" https://blog.codinghorror.com/" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://blog.codinghorror.com/</i></a>
+
+        </section>
+        <section class="section_4 mb-5">
+            <h2>David Walsh </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/david-walsh.png.webp"
+                alt="david walsh img" class="img-fluid img-thumbnail" /><br><br>
+            <p>This popular coding blog focuses on modern libraries, programming tutorials and shortcuts for programming
+                in JavaScript. David Walsh and his guest bloggers provide daily posts and commentary to help you learn
+                how to code quicker and more efficiently.</p>
+            <p>On his blog, you’ll find everything from how to build a video player using React to using Node.js and
+                mastering advanced HTML/CSS techniques by subscribing to this leading programming blog.</p>
+            <a href="https://davidwalsh.name/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://davidwalsh.name/</i></a>
+        </section>
+        <section class="section_4 mb-5">
+            <h2>A List Apart </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/a-list-apart.png.webp"
+                alt="a list apart image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Several bloggers contribute to this code-based blog to create a highly informative and entertaining
+                stream of posts. Follow this programming blog to learn about issues affecting web accessibility, user
+                interfaces, programming languages, front-end development and HTML/CSS.</p>
+            <a href=" https://alistapart.com/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://alistapart.com/</i></a>
+        </section>
+        <section class="section_5 mb-5">
+            <h2>WebDevBlog</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2019/08/webdevblog.png.webp"
+                alt="webDev Blog image" class="img-fluid img-thumbnail" /><br><br>
+            <p>WebDevBlog is a new web development blog that I created a while ago. It contains in-depth articles about
+                everything important for web developers: HTML/CSS, JavaScript, PHP, React…</p>
+            <p>Despite being relatively new, WebDevBlog articles and guides have been featured in high-profile blogs as
+                such as WebDesigner Depot.</p>
+            <a href="https://webdevblog.com/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://webdevblog.com/</i></a>
+        </section>
+        <section class="section_6 mb-5">
+            <h2>CodeWall</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2019/08/codewall.png.webp"
+                alt="code wall image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Created by British web developer Dan Englishby, CodeWall is a website providing useful, in-depth
+                tutorials for both front-end and back-end developers.</p>
+            <p>CodeWall has many articles on topics as such as HTML/CSS, Node.js, JavaScript, and PHP that will appeal
+                to both motivated beginners and experienced coders.</p>
+            <a href="https://www.codewall.co.uk" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://www.codewall.co.uk</i></a>
+        </section>
+        <section class="section_7 mb-5">
+            <h2>Future Processing</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2019/10/future-processing.png.webp"
+                alt="future processing image" class="img-fluid img-thumbnail" /><br><br>
+            <p>A space where you’ll find comments on technology trends and news regarding coding practices, software
+                development and IT nearshoring.</p>
+            <p>Run by IT professionals and software engineers from Future Processing specializing in .NET and Java
+                development whose knowledge extends beyond internal know-how and almost 20 years of experience, drawing
+                on the expertise of their clients and partners.</p>
+            <a href=" https://www.future-processing.com/blog/" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://www.future-processing.com/blog/</i></a>
+        </section>
+        <section class="section_8 mb-5">
+            <h2>Ray Wenderlich</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/ray-wenderlich.png.webp"
+                alt="ray wenderlich image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Ray Wenderlich’s programming blog is among the most trusted and highest quality on the market. It
+                contains posts and videos for programming applications for Android and other environments.</p>
+            <p>The blog also contains a podcast for those who wish to learn by listening while on the go or taking a
+                break. This blog contains thousands of posts and over 3000 step-by-step programming tutorials.</p>
+            <a href=" https://www.raywenderlich.com/" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://www.raywenderlich.com/</i></a>
+        </section>
+        <section class="section_9 mb-5">
+            <h2>Erik Bernhardsson </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/erik-bern.png.webp"
+                alt="erik bernhardsson image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Erik Bernhardsson is an excellent blogger and coder with a programming blog that examines issues
+                affecting all coders like Git repos, IDEs, naming conventions, and Windows support issues for various
+                coding software.</p>
+            <p>If you’re interested in coding from a corporate perspective, or want to pick up some quick tips for your
+                next project then you should check out this minimalist, well-written coding blog. Bernhardsson also
+                covers issues affecting programmers in the broader sense like conversion rates and SaaS (Software as a
+                Service.)</p>
+            <a href="https://erikbern.com/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://erikbern.com/</i></a>
+        </section>
+        <section class="section_10 mb-5">
+            <h2>Cat On Mat</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/catonmat.png.webp"
+                alt="cat on mat image" class="img-fluid img-thumbnail" /><br><br>
+            <p>This unique coding blog is dedicated to covering topics JavaScript libraries, tools, XML, JSON, and even
+                binary. The CatOnMat blog is written by well-known programmer Peteris Krumins and is regularly updated.
+            </p>
+            <p>This blog has been up and running since July of 2007 and has gained many followers over the years. You
+                can also read about Perl on this blog, as the author has published a book on the language.</p>
+            <a href="https://www.catonmat.net/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://www.catonmat.net/</i></a>
+        </section>
+        <section class="section_11 mb-5">
+            <h2>Web Designer Depot </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/web-designer-depot.png.webp"
+                alt="web designer depot image" class="img-fluid img-thumbnail" /><br><br>
+            <p>If you are interested in web development and web design, then you should consider this blog a must-read.
+                The Web Designer Depot covers topics ranging from backend server-side coding to frontend functionality
+                and design.
+            </p>
+            <p>There’s a lot of development articles and tutorials posted to this website to help developers and
+                designers better understand the code that makes the web work. This blog covers topics like web hosting
+                standards and element design and construction. </p>
+            <a href=" https://www.webdesignerdepot.com/" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://www.webdesignerdepot.com/</i></a>
+        </section>
+        <section class="section_12 mb-5">
+            <h2>NSHipster </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/ns-hipster.png.webp"
+                alt="Nshipter image" class="img-fluid img-thumbnail" /><br><br>
+            <p>The NSHipster blog is written for those who code in Objective-C and want to find rare and useful facts
+                and tips about the language. It covers <a href="https://developer.apple.com/swift/">Swift</a> and <a
+                    href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CocoaApplicationLayer/CocoaApplicationLayer.html">Cocoa</a>
+                for a comprehensive study of all things Mac-related.
+            </p>
+            <p>If you are a software engineer and program for Mac products or iOS then you should definitely add this
+                blog to your RSS feed, as you’ll find great information on a weekly basis.</p>
+            <a href="https://nshipster.com/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://nshipster.com/</i></a>
+        </section>
+        <section class="section_13 mb-5">
+            <h2>CodePen Blog </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/codepen.png.webp"
+                alt="code pen image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Many programmers are familiar with CodePen and its popular projects library where coders can share and
+                download libraries and other code but some may not be aware of the brilliant blog section of this
+                website.
+            </p>
+            <p>CodePen offers blog posts several times per week on subjects like web development, programming languages
+                and open source tools.</p>
+            <a href=" https://blog.codepen.io/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://blog.codepen.io/</i></a>
+        </section>
+        <section class="section_14 mb-5">
+            <h2>Scott Hanselman </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/scott-hanselman.png.webp"
+                alt="scott image" class="img-fluid img-thumbnail" /><br><br>
+            <p>Scott Hanselman runs a fascinating blog that covers issues like .NET programming and web applications.
+                You can learn how to setup an IIS web hosting server and create .NET applications by following some of
+                the tutorial posts on this coding blog.
+            </p>
+            <p>Scott Hanselman posts a few times a week on this venue and keeps readers informed about new trends in
+                programming, conventions, and protocols.</p>
+            <a href="  https://www.hanselman.com/blog/" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://www.hanselman.com/blog/</i></a>
+        </section>
+        <section class="section_15 mb-5">
+            <h2>David Ford </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/david-ford.png.webp"
+                alt="scott image" class="img-fluid img-thumbnail" /><br><br>
+            <p>David Ford is a programmer and blogger with an excellent coding blog at Medium. He covers topics like web
+                development, UX, templates, JavaScript web apps, and mobile applications. This blog will help you make
+                the best of your web hosting and design environment with its useful tips on efficiency.
+            </p>
+            <p>This blog also contains opinions on the future of certain languages and how search engines are beginning
+                to rank development features. Keep an eye on this blog if you write code for the web or need to stay
+                informed about trending languages and libraries.</p>
+            <a href=" https://medium.com/@daveford" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://medium.com/@daveford</i></a>
+        </section>
+        <section class="section_16 mb-5">
+            <h2>Hongkiat</h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/hongkiat.png.webp"
+                alt="hongkiat image" class="img-fluid img-thumbnail" /><br><br>
+            <p>I’ve been reading this great programming blog for over a decade and Hongkiat has allowed me to learn a
+                lot of useful things and keep up with modern techniques and tools.
+            </p>
+            <p>Hongkiat features daily blog posts about various programming languages, web development, and web design.
+            </p>
+            <a href="https://www.hongkiat.com/blog/" target="_blank"><i class="fa fa-long-arrow-right"
+                    aria-hidden="true">
+                    https://www.hongkiat.com/blog/</i></a>
+        </section>
+        <section class="section_17 mb-5">
+            <h2>CSS Tricks </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/css-tricks.png.webp"
+                alt="css tricks image" class="img-fluid img-thumbnail" /><br><br>
+            <p>A personal favorite of mine, CSS Tricks offers amongst the best programming tips available when it comes
+                to topics as such as CSS, JavaScript, UX, and web design.
+            </p>
+            <p>CSS Tricks is one of the best programming blogs for front-end developers. The site not only features
+                articles, but also a vast library of reusable code snippets.
+            </p>
+            <a href="https://css-tricks.com/" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true">
+                    https://css-tricks.com/</i></a>
+        </section>
+        <section class="section_18 mb-5">
+            <h2>Frequently Asked Questions </h2><br>
+            <img src="https://cdn-5ce4a003f911c80f50818892.closte.com/wp-content/uploads/2018/05/coding-blog.jpg.webp"
+                alt="freq asked image" class="img-fluid img-thumbnail" /><br><br>
+        </section>
+        <section class="section_18 mb-5">
+            <h2>How Do I Start a Programming Blog? </h2><br>
+            <p>Starting a programming blog isn’t a complicated task for an experienced coder. Here are the first steps
+                to get you started: </p>
+            <ul>
+                <li>Pick a domain name and get <a href="https://catswhocode.com/best-web-hosting/">quality
+                        webhosting</a>. </li>
+                <li>Install WordPress, or another blogging software of your choice.</li>
+                <li>Write and publish your first posts. </li>
+                <li>Promote your blog and optimize its SEO. </li>
+            </ul>
+        </section>
+        <section class="section_19 mb-5">
+            <h2>How do I Start a Career in Programming? </h2>
+            <p>Programmer is an interesting and well-paid position. Please refer to our <a
+                    href="https://catswhocode.com/become-a-web-developer/">become a web developer</a> guide to
+                get started. </p>
+        </section>
+        <section class="section_20 mb-5 ">
+            <h2>Share This Post:</h2><br>
+            <a href="#"> <i class="fa fa-facebook circle-icon" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter circle-icon" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin circle-icon" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-reddit-alien circle-icon" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-whatsapp circle-icon" aria-hidden="true"></i></a>
+
+        </section>
+        <hr><br>
+        <div class="media  p-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRvYHct4-DPn1oMAM3E7Cpm7Bgtb0dvaaH-w&usqp=CAU"
+                alt="image" class="circle-icon mr-3" id="intro-img" />
+            <div class="media-body">
+                <h2>Naga Govardhan</h2>
+                <p id="intro-para" onclick="myFunction();">Click the para to know about mee.</p>
+            </div>
+            <a href="#"><input type="button" value="Back To Top"></a>
         </div>
     </div>
-
+    <footer class="page-footer font-small bg-dark text-light">
+        <div class="container terms text-center  p-2">
+            <ul>
+                <li><a href="tel:91 8297297845">Contacts</a></li>
+                <li><a href="www.tenet.com">Terms of Service</a></li>
+                <li><a href="https://www.javascript.com">Privacy Policy</a></li>
+                <li><a onclick="getLocation();">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright text-center py-3">Copyright © 2018-2022. All Rights Reserved.
+            <a href="#"> example.com</a>
+        </div>
+    </footer>
 </body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("intro-para");
+        x.innerHTML = "Gulabiii";
+    }
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        else {
+            alert("GeoLocation is not supported on your Browser");
+        }
+    }
+    function showPosition(position) {
+        alert("Your Latitude: " + position.coords.latitude + " and Longitude: " + position.coords.longitude);
+    }
+</script>
 
 </html>
