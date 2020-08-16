@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/61c3e49273.js" crossorigin="anonymous"></script>
-    <title>Boot-1</title>
+    <title>Document</title>
     <style>
         body {
 
@@ -178,9 +178,8 @@
 
         .terms ul {
             color: white;
-            font-size: 17px;
+            font-size: 18px;
             text-align: center;
-            width: 45%;
             margin-left: auto;
             margin-right: auto;
             text-decoration: none;
@@ -193,13 +192,15 @@
 
         .terms ul li {
             padding: 5px;
-            margin-right:20px;
+            margin-right: 20px;
         }
 
         .terms ul li a {
             text-decoration: none;
             color: white;
         }
+
+
 
         @media screen and (min-width:800px) {
             .navbar-nav {
@@ -551,14 +552,14 @@
         </section>
         <section class="section_20 mb-5 ">
             <h2>Share This Post:</h2><br>
-            <a href="https://www.facebook.com/profile.php?id=100008652942870" target="_blank"> <i class="fa fa-facebook circle-icon"
+            <a href="https://www.facebook.com/profile.php?id=100008652942870"> <i class="fa fa-facebook circle-icon"
                     aria-hidden="true"></i></a>
-            <a href="https://twitter.com/Govardh47505652" target="_blank"><i class="fa fa-twitter circle-icon"
+            <a href="https://twitter.com/Govardh47505652"><i class="fa fa-twitter circle-icon"
                     aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/naga-govardhan-thatha-b00bb7189/" target="_blank"><i class="fa fa-linkedin circle-icon"
+            <a href="https://www.linkedin.com/in/naga-govardhan-thatha-b00bb7189/"><i class="fa fa-linkedin circle-icon"
                     aria-hidden="true"></i></a>
             <a href="#"> <i class="fa fa-reddit-alien circle-icon" aria-hidden="true"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=918297297845" target="_blank"><i class="fa fa-whatsapp circle-icon"
+            <a href="https://api.whatsapp.com/send?phone=918297297845"><i class="fa fa-whatsapp circle-icon"
                     aria-hidden="true"></i></a>
 
         </section>
@@ -568,15 +569,19 @@
                 alt="image" class="circle-icon mr-3" id="intro-img" />
             <div class="media-body">
                 <h2>Naga Govardhan</h2>
-                <p id="intro-para" onclick="myFunction();">Click this text to know about mee.</p>
+                <p id="intro-para" onclick="myFunction();">Click the para to know about mee.</p>
+
             </div>
+
+
         </div>
-        <button type="button" class="btn btn-primary btn-block" onclick="editFunction();">Click the button to Edit this Doc.</button><br>
+        <button type="button" class="btn btn-primary btn-block" onclick="editFunction();">Click the button to Edit this
+            doc.</button><br>
     </div>
     <footer class="page-footer font-small bg-dark text-light">
         <div class="container terms text-center  p-2">
             <ul>
-                <li><a href="tel:+91 8297297845">Contacts</a></li>
+                <li><a href="tel:91 8297297845">Contacts</a></li>
                 <li><a href="www.tenet.com">Terms of Service</a></li>
                 <li><a href="https://www.javascript.com">Privacy Policy</a></li>
                 <li><a onclick="getLocation();">Site Map</a></li>
@@ -593,8 +598,8 @@
         var x = document.getElementById("intro-para");
         x.innerHTML = "Gulabiii";
     }
-    
-    
+
+
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
@@ -606,12 +611,12 @@
     function showPosition(position) {
         alert("Your Latitude: " + position.coords.latitude + " and Longitude: " + position.coords.longitude);
     }
-    
-    
-    function editFunction(){
-        document.designMode="on";
+
+
+
+    function editFunction() {
+        document.designMode = "on";
     }
-    
 </script>
 
 </html>
