@@ -313,6 +313,9 @@
             <p>Naga Govardhan<br>
                 <i class="fa fa-birthday-cake" aria-hidden="true"><small>&nbsp;&nbsp;31 January, 1845</small></i></p>
         </div>
+        <div class="text-center">
+            <small><p id="name"></p></small>
+        </div>
         <section class="section_1 mb-5">
             <h1 style="text-align: center;">Top Programming Blogs to Improve Your Skills</h1><br>
             <p>It’s important to follow trends in your field to ensure you’re staying current on standards and protocols
@@ -599,6 +602,15 @@
 </body>
 
 <script>
+    function displayName(){
+        var name = prompt("Enter Your Name To Join:");
+        alert("Hello " + name + ", Welcome To The Kallam Club");
+        document.getElementById("name").innerHTML = name + "Has Been Added To The CLub(+1)";
+    }
+    
+    
+    
+    
     function myFunction() {
         var x = document.getElementById("intro-para");
         x.innerHTML = "Gulabiii";
