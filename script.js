@@ -1,7 +1,11 @@
 function displayFunction() {
     var name = prompt("Enter Your Name To Join:");
-    alert("Hello " + name + ", Welcome To Our Kallam Club");
-    document.getElementById("name").innerHTML = name + " Has Been Joined.(+1)";
+    if (name == null) {
+        alert("Don&apos;t ya have a Name??")
+    } else {
+        alert("Hello " + name + ", Welcome To Our Kallam Club");
+        document.getElementById("name").innerHTML = name + " Has Been Joined.(+1)";
+    }
 }
 
 
