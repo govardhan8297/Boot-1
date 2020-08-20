@@ -1,9 +1,5 @@
 function displayFunction() {
-    var name = prompt("Enter Your Name To Join:");
-    var date = new Date();
-    alert("Hello " + name + ", Welcome To Our Kallam Club");
-    document.getElementById("name").innerHTML = name + " Has Been Joined on " + date.getDate + "/" + date.getMonth + "/" + date.getFullYear + "at " + date.getHours + ":" + date.getMinutes + ":" + date.getSeconds;
-    alert("naga");
+    alert("Naga How r U??")
 }
 
 
