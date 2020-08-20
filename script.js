@@ -1,4 +1,4 @@
-function displayFunction() {
+function displayName() {
     var name = prompt("Enter Your Name To Join:");
     var date = new Date();
     alert("Hello " + name + ", Welcome To Our Kallam Club");
