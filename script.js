@@ -1,5 +1,5 @@
 function displayFunction() {
-    alert("Naga How r U??")
+    alert("Naga How r U??");
 }
 
 
