@@ -1,5 +1,8 @@
 function displayFunction() {
     var name = prompt("Enter Your Name To Join:");
+    if (name == null) {
+        alert("don't you have a name");
+    }
     alert("Hello " + name + ", Welcome To Our Kallam Club");
     document.getElementById("name").innerHTML = name + " Has Been Joined.(+1)";
 
