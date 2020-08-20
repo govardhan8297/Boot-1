@@ -1,8 +1,9 @@
 function displayName() {
     var date = new Date();
+    var am_pm = date.getHours() >= 12 ? "PM" : "AM";
     var name = prompt("Enter Your Name To Join:");
     alert("Hello " + name + ", Welcome To Our Kallam Club");
-    document.getElementById("name").innerHTML = name + " Has Been Joined on " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear() + " at " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    document.getElementById("name").innerHTML = name + " Has Been Joined on " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear() + " at " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + am_pm;
 
 }
 
