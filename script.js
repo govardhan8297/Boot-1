@@ -1,3 +1,5 @@
+//Displaying Name and Joining time
+
 function displayName() {
     var date = new Date();
     var am_pm = date.getHours() >= 12 ? "PM" : "AM";
@@ -9,12 +11,15 @@ function displayName() {
 
 
 
-
+//overwriting intro-para textcontent
 
 function myFunction() {
     var x = document.getElementById("intro-para");
     x.innerHTML = "Gulabiii";
 }
+
+
+//getting user Geo-Location...and alerting..
 
 
 function getLocation() {
@@ -29,6 +34,8 @@ function showPosition(position) {
     alert("Your Latitude: " + position.coords.latitude + " and Longitude: " + position.coords.longitude);
 }
 
+
+//Making the document Editable!!!
 
 
 function editFunction() {
