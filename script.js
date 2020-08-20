@@ -13,7 +13,7 @@ function displayName() {
 
 //overwriting intro-para textcontent
 
-function myFunction() {
+function overwriteFunction() {
     var x = document.getElementById("intro-para");
     x.innerHTML = "Gulabiii";
 }
