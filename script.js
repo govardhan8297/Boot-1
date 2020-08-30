@@ -5,9 +5,14 @@ function displayName() {
     var am_pm = date.getHours() >= 12 ? "PM" : "AM";
     var name = prompt("Enter Your Name To Join:");
     var cap_name = name.toUpperCase();
+    if(name == null || name == ""){
+        alert("You says : You don't have a name");
+    }
+    else {
+        
     alert("Hello " + cap_name + ", Welcome To Our Kallam Club");
     document.getElementById("name").innerHTML = cap_name + " Has Been Joined on " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + " at " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + am_pm;
-
+    }
 }
 
 
