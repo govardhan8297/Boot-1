@@ -10,21 +10,255 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
     <script
       src="https://kit.fontawesome.com/61c3e49273.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      .navbar-brand {
+        padding: 15px;
+      }
+
+      .navbar-brand:hover {
+        cursor: pointer;
+      }
+
+      .navbar-nav .nav-item {
+        padding-left: 40px;
+      }
+
+      .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+
+      .text-light {
+        color: white;
+      }
+
+      .dropdown-item {
+        color: white;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      ul li .navbar-nav {
+        display: block;
+      }
+
+      .navbar-nav:hover {
+        cursor: pointer;
+      }
+
+      header img[alt="image1"] {
+        width: 700px;
+        height: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+      }
+
+      header img[alt="image2"] {
+        width: 80px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateY(-70%);
+        -webkit-transform: translateY(-70%);
+        -moz-transform: translateY(-70%);
+        -o-transform: translateY(-70%);
+        -ms-transform: translateY(-70%);
+      }
+
+      .circle-img {
+        border-radius: 50%;
+        border: 5px solid white;
+      }
+
+      .content {
+        transform: translateY(-50%);
+        -moz-transform: translateY(-500%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        text-align: center;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+
+      .container {
+        width: 48%;
+      }
+
+      section a:hover {
+        text-decoration: none;
+      }
+
+      .section_20 {
+        font-size: 25px;
+      }
+
+      .section_20 {
+        display: block;
+      }
+
+      .section_20 a {
+        text-align: center;
+        padding: 30px;
+      }
+
+      .fa-facebook {
+        color: white;
+        background-color: blue;
+      }
+
+      .fa-facebook:hover {
+        color: white;
+        background-color: rgba(10, 10, 138, 0.753);
+      }
+
+      .fa-linkedin {
+        color: white;
+        background-color: rgba(9, 138, 170, 0.808);
+      }
+
+      .fa-linkedin:hover {
+        color: white;
+        background-color: rgba(52, 155, 180, 0.808);
+      }
+
+      .fa-twitter {
+        color: white;
+        background-color: rgb(17, 194, 238);
+      }
+
+      .fa-twitter:hover {
+        color: white;
+        background-color: rgb(10, 137, 168);
+      }
+
+      .fa-reddit-alien {
+        color: white;
+        background-color: rgb(255, 59, 45);
+      }
+
+      .fa-reddit-alien:hover {
+        color: white;
+        background-color: rgb(255, 8, 8);
+      }
+
+      .fa-whatsapp {
+        color: white;
+        background-color: rgb(19, 161, 19);
+      }
+
+      .fa-whatsapp:hover {
+        color: white;
+        background-color: rgb(40, 182, 40);
+      }
+
+      .circle-icon {
+        border-radius: 50%;
+        padding: 10px;
+        vertical-align: middle;
+      }
+
+      #intro-img {
+        width: 70px;
+        border: 1px solid black;
+      }
+
+      .terms ul {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .terms ul li :hover {
+        cursor: pointer;
+      }
+
+      .terms ul li {
+        padding: 5px;
+        margin-right: 20px;
+      }
+
+      .terms ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      section img {
+        transition: transform 0.2s;
+      }
+
+      section img:hover {
+        transform: scale(1.1);
+      }
+
+      @media screen and (min-width: 800px) {
+        .navbar-nav {
+          transform: translateX(10%);
+        }
+
+        .navbar-brand {
+          transform: translateX(30%);
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        .navbar-brand {
+          transform: translateX(-10%);
+          -webkit-transform: translateX(-10%);
+          -moz-transform: translateX(-10%);
+          -o-transform: translateX(-10%);
+          -ms-transform: translateX(-10%);
+        }
+
+        header img[alt="image1"] {
+          height: 50%;
+        }
+
+        header img[alt="image2"] {
+          width: 15%;
+          height: 10%;
+        }
+
+        .container {
+          width: 100%;
+        }
+
+        .section_20 a {
+          display: flex;
+          padding: 20px;
+        }
+
+        .section_20 a i {
+          width: 100%;
+          text-align: center;
+        }
+
+        .circle-icon {
+          border-radius: 40px;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" class="nav-link" href="#" onclick="displayName();"
-        >{KallamKurrallu}</a
-      >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" onclick="displayName()">{KallamKurrallu}</a>
       <button
         type="button"
         data-toggle="collapse"
@@ -56,6 +290,7 @@
               id="navbarDropdown"
               >Web Development</a
             >
+
             <div class="dropdown-menu bg-dark">
               <a class="dropdown-item" href="#"
                 >How to Become a Web Developer</a
@@ -71,6 +306,9 @@
           </li>
           <li class="nav-item text-muted">
             <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item text-muted" id="log-in">
+            <a class="nav-link">Log In</a>
           </li>
         </ul>
       </div>
@@ -639,11 +877,12 @@
         />
         <div class="media-body">
           <h2>Naga Govardhan</h2>
-          <p id="intro-para" onclick="overwriteFunction();">
+          <p id="intro-para" onclick="myFunction();">
             Click the para to know about mee.
           </p>
         </div>
       </div>
+
       <button
         type="button"
         class="btn btn-primary btn-block"
@@ -651,6 +890,10 @@
       >
         Click the button to Edit this doc.</button
       ><br />
+
+      <audio id="music" autoplay="autoplay">
+        <source src="Mathu-Vadalara-Ringtone (1).mp3" type="audio/Mp3" />
+      </audio>
     </div>
     <footer class="page-footer font-small bg-dark text-light">
       <div class="container terms text-center p-2">
@@ -666,7 +909,89 @@
         <a href="mailto:govardhan4f8@gmail.com"> govardhan4f8@gmail.com</a>
       </div>
     </footer>
-    <script src="script.js" ></script>
-
   </body>
+
+  <script>
+    function displayName() {
+      const date = new Date();
+      var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+      var name = prompt("Enter Your Name: ", "Name");
+      var cap_name = name.toUpperCase();
+      const monthNames = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+      if (name == null || name == "") {
+        alert("You don't have a name??");
+      } else {
+        alert("Hello " + cap_name + ", Welcome To Our Site.");
+
+        document.getElementById("name").innerHTML =
+          cap_name +
+          " Has Been Joined The Club On " +
+          date.getDate() +
+          " " +
+          monthNames[date.getMonth()] +
+          " " +
+          date.getFullYear() +
+          " At " +
+          date.getHours() +
+          ":" +
+          date.getMinutes() +
+          ":" +
+          date.getSeconds() +
+          " " +
+          am_pm;
+      }
+    }
+
+    //Change text on click
+    function myFunction() {
+      var x = document.getElementById("intro-para");
+      x.innerHTML = "Gulabiii";
+    }
+
+    //Checks for navigator if present requests location
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("GeoLocation is not supported on your Browser");
+      }
+    }
+    function showPosition(position) {
+      alert(
+        "Your Latitude: " +
+          position.coords.latitude +
+          " and Longitude: " +
+          position.coords.longitude
+      );
+    }
+
+    //Edit doc
+    function editFunction() {
+      document.designMode = "on";
+    }
+
+    /*window.onload = function (){
+             document.getElementById("music").play();
+        }*/
+
+    //start after 5milliseconds
+    setTimeOut(function () {
+      document.getElementById("music").play();
+    }, 5000);
+  </script>
 </html>
