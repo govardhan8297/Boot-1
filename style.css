@@ -2,7 +2,7 @@ body {
     
     box-sizing: border-box;
 }
-body p{
+section p:hover{
     transform: traslateZ(20px);
 }
 
