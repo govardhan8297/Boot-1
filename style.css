@@ -1,6 +1,9 @@
 body {
-
+    
     box-sizing: border-box;
+}
+body p{
+    transform: traslateZ(20px);
 }
 
 .navbar-brand {
